@@ -1,12 +1,54 @@
-CODEBOOK fun_analysis.R
+CODEBOOK run_analysis.R
 Author: JJ Diefenbach
 
-This file describes the different measurement variables found in the columns of Tidy_data.txt
+1. OUTPUT VARIABLES OF run_analysis.R
+This part describes the output variables of run_analysis.R
+
+"activitynames"
+6 x 2 dataframe, first column: activity number, second column: activity name
+
+"activityTest"
+vector of length 2947 with relevant activity number per observation in test data
+
+"activityTrain"
+vector of length 7352 with relevant activity number per observation in training data
+
+"groupData"
+the total tidy data set (10299 x 68) grouped first by subject id, then by activity
+
+"meanData"
+180 x 68 dataframe containing the mean value per measurement for 30 persons and 6 activities
+
+"measurementNames"
+561 x 2 dataframe containing the names of different measurements used in the original data set (second column)
+
+"subjectTest"
+vector of length 2947 with relevant subject id per observation in test data
+
+"subjectTrain"
+vector of length 7352 with relevant subject id per observation in training data
+
+"testSet"
+2947 x 563 dataframe containing the test data, combined with subject id and activity number
+
+"tidyData"
+10299 x 68 dataframe with the selected mean and std columns
+
+"totalSet"
+10299 x 563 dataframe. This is the complete set of data obtained by combining test and training data
+
+"trainSet"
+7352 x 563 dataframe containing the training data, combined with subject id and activity number
+
+
+
+2. MEASUREMENT VARIABLES IN Tidy_data.txt
+This part describes the measurement variables (68 in total), the column names of the output dataframe
 
 "Subject"                     
-subject id number
+subject id number (factor variable)
  
-"Activity"
+"Activity" (factor variable)
 1 = Walking
 2 = Walking Upstairs
 3 = Walking downstairs
