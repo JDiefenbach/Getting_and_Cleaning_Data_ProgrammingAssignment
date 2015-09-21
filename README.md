@@ -1,4 +1,4 @@
-README fun_analysis.R
+README run_analysis.R
 Author: JJ Diefenbach
 
 This file describes the procedures used in fun_analysis.R
